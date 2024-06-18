@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #282c34;
+            color: #ffffff;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2em;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #61dafb;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #61dafb;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1em;
+        }
+
+        .social-icons a {
+            color: #61dafb;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #fff;
+        }
+
+        section {
+            padding: 4em 2em;
+            margin: 2em 0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .colorful-blocks {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .colorful-block {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .colorful-block:hover {
+            transform: scale(1.05);
+        }
+
+        .block-header {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .block-content {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .bright-colors {
+            background: linear-gradient(to right, #f7ff00, #db36a4);
+        }
+
+        .bright-colors-alt {
+            background: linear-gradient(to right, #ff512f, #dd2476);
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            background-color: #ff69b4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #282c34;
+            color: #61dafb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Peeyush Kotha</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+				<li><a href="#skills">Internships  </a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="www.linkedin.com/in/peeyush-kotha" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </header>
+
+    <section id="about" class="bright-colors">
+        <h2 class="block-header">About Me</h2>
+        <p class="block-content">Welcome to my portfolio! I am a Finacle Customization Developer.</p>
+    </section>
+
+    <section id="skills" class="bright-colors-alt">
+        <h2 class="block-header">Skills</h2>
+        <div class="colorful-blocks">
+            <div class="colorful-block">
+                <i class="fab fa-html5 fa-2x"></i>
+                <span class="block-content">HTML</span>
+            </div>
+            <div class="colorful-block">
+                <i class="fab fa-css3-alt fa-2x"></i>
+                <span class="block-content">CSS</span>
+            </div>
+            <div class="colorful-block">
+                <i class="fab fa-js-square fa-2x"></i>
+                <span class="block-content">JavaScript</span>
+            </div>
+            <div class="colorful-block">
+                <i class="fab fa-react fa-2x"></i>
+                <span class="block-content">React</span>
+            </div>
+            <div class="colorful-block">
+                <i class="fab fa-node-js fa-2x"></i>
+                <span class="block-content">Node.js</span>
+            </div>
+        </div>
+    </section>
+
+	<section id="intern" class="bright-colors">
+        <h2 class="block-header">Internships</h2>
+        <div class="colorful-blocks">
+            <div class="colorful-block">
+                <h3 class="block-header">1</h3>
+                <p class="block-content">Java J2EE - Worked as an Intern in wipro as a Java J2ee got adequate training and gained required knowledge</p>
+            </div>
+            <div class="colorful-block">
+                <h3 class="block-header">2</h3>
+                <p class="block-content">Automation Functional Testing - Got the training in Wipro and gained knowledge in  Automation Functional Testing in Wipro</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bright-colors">
+        <h2 class="block-header">Projects</h2>
+        <div class="colorful-blocks">
+            <div class="colorful-block">
+                <h3 class="block-header">Project One</h3>
+                <p class="block-content">Description of the first project.</p>
+            </div>
+            <div class="colorful-block">
+                <h3 class="block-header">Project Two</h3>
+                <p class="block-content">Description of the second project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bright-colors-alt">
+        <h2 class="block-header">Contact</h2>
+        <p class="block-content">Email: peeyushkotha77@gmail.com</p>
+		<p class="block-content">Mobile: 6303077404</p>
+        <p class="block-content">LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">Peeyush Kotha</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Peeyush Kotha</p>
+    </footer>
+    <script>
+        // Add any interactive functionality here
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Document loaded');
+        });
+    </script>
+</body>
+</html>
